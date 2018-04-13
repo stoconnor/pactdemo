@@ -1,0 +1,39 @@
+{
+    "provider": {
+        "name": "test_provider"
+    },
+    "consumer": {
+        "name": "other_consumer"
+    },
+    "interactions": [
+        {
+            "description": "Other Consumer Request",
+            "request": {
+                "method": "GET",
+                "path": "/user/3"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "content-type": "application/json"
+                },
+                "body": {
+                    "userName": "John",
+                    "userId": "3",
+                    "firstName": "John",
+                    "lastName": null,
+                    "email": null,
+                    "groups": null
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.12"
+        }
+    }
+}

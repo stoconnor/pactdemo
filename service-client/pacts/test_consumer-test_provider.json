@@ -1,0 +1,44 @@
+{
+    "provider": {
+        "name": "test_provider"
+    },
+    "consumer": {
+        "name": "test_consumer"
+    },
+    "interactions": [
+        {
+            "description": "Test User Service",
+            "request": {
+                "method": "GET",
+                "path": "/user/1"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "content-type": "application/json"
+                },
+                "body": {
+                    "userName": "Bob",
+                    "userId": "1",
+                    "firstName": null,
+                    "lastName": null,
+                    "email": null,
+                    "groups": null
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "default"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.12"
+        }
+    }
+}
